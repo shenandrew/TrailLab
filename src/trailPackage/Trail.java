@@ -34,7 +34,13 @@ public class Trail {
 	}
 
 	public int findMaxElevation() {
-		return 1; // Here so that the program will compile, can delete this
+		int max = 0;
+		for(int i = 0; i < markers.length; i++) { // Finds max value
+			if(markers[i] > max) {
+				max = markers[i];
+			}
+		}
+		return max;
 	}
 
 	public int findMaxElevation(int start, int end) {
