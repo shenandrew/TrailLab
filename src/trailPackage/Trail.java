@@ -11,7 +11,20 @@ public class Trail {
 		importTrail();
 	}
 	public boolean isLevelTrailSegment(int start, int end) {
-		return false; //Here so that the program will compile, can delete this
+		int max = 0;
+		int min = 0;
+		for(int i = start; i < end; i++) { // Finds the max and mins of the Trail Segment
+			if(markers[i] > max) {
+				max = markers[i];
+			} else if(markers[i] < min) {
+				min = markers[i];
+			}	
+		}
+		if(max - min <= 10) { // Checks if difference between the max and min is less than 10
+			return true; // If less than or equal to 10, return true
+		} else {
+			return false; // If more than 10, return false
+		}
 	}
 	
 	public boolean isDifficult() {
