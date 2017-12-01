@@ -43,7 +43,9 @@ public class Trail {
 		return max;
 	}
 
-	public int findMaxElevation(int start, int end) {
+	public int findMaxElevation(int start, int end) 
+	{
+		
 		return 1; // Here so that the program will compile, can delete this
 	}
 
