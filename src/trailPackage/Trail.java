@@ -51,8 +51,18 @@ public class Trail {
 		return 1; // Here so that the program will compile, can delete this
 	}
 
-	public int findMinElevation(int start, int end) {
-		return 1; // Here so that the program will compile, can delete this
+	public int findMinElevation(int start, int end) 
+	{
+
+		int min = markers[start];
+		for(int i = start; i < end; i++) 
+		{
+			if(markers[i] < min)
+			{
+				min = markers[i];
+			}
+		}
+		return min;  //Here so that the program will compile, can delete this
 	}
 
 	// Do not edit this method, no touchy
