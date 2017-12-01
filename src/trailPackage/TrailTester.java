@@ -1,4 +1,5 @@
 package trailPackage;
+
 public class TrailTester
 {
    public static void main(String [] args)
