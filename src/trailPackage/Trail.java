@@ -62,7 +62,7 @@ public class Trail {
 				min = markers[i];
 			}
 		}
-		return min;  //Here so that the program will compile, can delete this
+		return min;  
 	}
 
 	// Do not edit this method, no touchy
