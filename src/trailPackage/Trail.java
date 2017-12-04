@@ -67,12 +67,12 @@ public class Trail {
 		return max;
 	}
 
-	public int findMinElevation() // Srujan Pandari
+	public int findMinElevation() // Saket Nekkanti
 	{
 		return 1; // Here so that the program will compile, can delete this
 	}
 
-	public int findMinElevation(int start, int end) // Saket Nekkanti
+	public int findMinElevation(int start, int end) // Srujan Pandari
 	{
 		int min = markers[start];
 		for (int i = start; i < end; i++) {
