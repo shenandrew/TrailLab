@@ -31,13 +31,10 @@ public class Trail {
 
 	public boolean isDifficult() { // Shivam Gangal
 		int temp = 0;
-		for (int i = 0; i < markers.length; i++) {
-			if ((int) (markers[i] - markers[i + 1]) > 30) {
+		for (int i = 0; i < markers.length - 1; i++) {
+			if ((int)(markers[i] - markers[i + 1]) > 30) {
 				temp = 75;
-			} else {
-				temp = 0;
-			}
-
+			} 
 		}
 		if (temp == 75) {
 			return true;
