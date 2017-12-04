@@ -32,9 +32,9 @@ public class Trail {
 	public boolean isDifficult() { // Shivam Gangal
 		int temp = 0;
 		for (int i = 0; i < markers.length - 1; i++) {
-			if ((int)(markers[i] - markers[i + 1]) > 30) {
+			if ((int) (markers[i] - markers[i + 1]) > 30) {
 				temp = 75;
-			} 
+			}
 		}
 		if (temp == 75) {
 			return true;
@@ -72,10 +72,8 @@ public class Trail {
 	public int findMinElevation(int start, int end) // Srujan Pandari
 	{
 		int compare = markers[start];
-		for(int i = start; i < end; i++)
-		{
-			if(markers[i] < compare)
-			{
+		for (int i = start; i < end; i++) {
+			if (markers[i] < compare) {
 				compare = markers[i];
 			}
 		}
