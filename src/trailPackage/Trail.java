@@ -30,13 +30,26 @@ public class Trail {
 	}
 
 	public boolean isDifficult() { // Shivam Gangal
-		return false; // Can delete
+		int temp = 0;
+		for (int i = 0; i < markers.length; i++) {
+			if ((int) (markers[i] - markers[i + 1]) > 30) {
+				temp = 75;
+			} else {
+				temp = 0;
+			}
+
+		}
+		if (temp == 75) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public int findMaxElevation() { // Andrew Shen
 		int max = 0;
-		for(int i = 0; i < markers.length; i++) { // Finds max value
-			if(markers[i] > max) {
+		for (int i = 0; i < markers.length; i++) { // Finds max value
+			if (markers[i] > max) {
 				max = markers[i];
 			}
 		}
@@ -46,14 +59,12 @@ public class Trail {
 	public int findMaxElevation(int start, int end) // Maggie Feng
 	{
 		int max = markers[start];
-		for(int i = start; i < end; i++)
-		{
-			if(markers[i] > max)
-			{
+		for (int i = start; i < end; i++) {
+			if (markers[i] > max) {
 				max = markers[i];
 			}
 		}
-		return max; 
+		return max;
 	}
 
 	public int findMinElevation() // Srujan Pandari
@@ -64,14 +75,12 @@ public class Trail {
 	public int findMinElevation(int start, int end) // Saket Nekkanti
 	{
 		int min = markers[start];
-		for(int i = start; i < end; i++) 
-		{
-			if(markers[i] < min)
-			{
+		for (int i = start; i < end; i++) {
+			if (markers[i] < min) {
 				min = markers[i];
 			}
 		}
-		return min;  
+		return min;
 	}
 
 	// Do not edit this method, no touchy
