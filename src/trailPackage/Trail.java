@@ -12,7 +12,7 @@ public class Trail {
 		importTrail();
 	}
 
-	public boolean isLevelTrailSegment(int start, int end) {
+	public boolean isLevelTrailSegment(int start, int end) { // Andrew Shen
 		int max = 0;
 		int min = 0;
 		for (int i = start; i < end; i++) { // Finds the max and mins of the Trail Segment
@@ -29,11 +29,11 @@ public class Trail {
 		}
 	}
 
-	public boolean isDifficult() {
-		return false; // Here so that the program will compile, can delete this
+	public boolean isDifficult() { // Shivam Gangal
+		return false; // Can delete
 	}
 
-	public int findMaxElevation() {
+	public int findMaxElevation() { // Andrew Shen
 		int max = 0;
 		for(int i = 0; i < markers.length; i++) { // Finds max value
 			if(markers[i] > max) {
@@ -43,7 +43,7 @@ public class Trail {
 		return max;
 	}
 
-	public int findMaxElevation(int start, int end) 
+	public int findMaxElevation(int start, int end) // Maggie Feng
 	{
 		int max = markers[start];
 		for(int i = start; i < end; i++)
@@ -56,14 +56,13 @@ public class Trail {
 		return max; 
 	}
 
-	public int findMinElevation() 
+	public int findMinElevation() // Srujan Pandari
 	{
 		return 1; // Here so that the program will compile, can delete this
 	}
 
-	public int findMinElevation(int start, int end) 
+	public int findMinElevation(int start, int end) // Saket Nekkanti
 	{
-
 		int min = markers[start];
 		for(int i = start; i < end; i++) 
 		{
