@@ -74,8 +74,15 @@ public class Trail {
 
 	public int findMinElevation(int start, int end) // Srujan Pandari
 	{
-		
-		return 0; // here so that
+		int compare = markers[start];
+		for(int i = start; i < end; i++)
+		{
+			if(markers[i] < compare)
+			{
+				compare = markers[i];
+			}
+		}
+		return compare; // here so that
 	}
 
 	// Do not edit this method, no touchy
